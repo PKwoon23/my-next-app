@@ -1,0 +1,29 @@
+.navContainer {
+    background-color: #2d3748; /* bg-gray-800 ใน tailwind */
+    color: white;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navList {
+    display: flex;
+    justify-content: center;
+    gap: 24px; /* space-x-6 ใน tailwind */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #d1d5db; /* hover:text-gray-300 ใน tailwind */
+  }

@@ -1,0 +1,70 @@
+/* About.module.css */
+.aboutPage {
+    padding: 80px;
+    background-color: #f9f9f9; /* เพิ่มสีพื้นหลังที่อ่อนลงเพื่อความสะอาด */
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 600; /* เพิ่มความหนาของฟอนต์เพื่อให้เด่นชัด */
+    margin-bottom: 20px;
+    color: #2c3e50; /* สีตัวอักษรที่ทำให้ดูเป็นมืออาชีพ */
+    text-align: center; /* ให้หัวข้ออยู่กลาง */
+  }
+  
+  .content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;  /* กำหนดความกว้างของเนื้อหา */
+    margin: 0 auto;  /* จัดกลาง */
+  }
+  
+  .content p {
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างย่อหน้า */
+  }
+  
+  .separator {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+  }
+  
+  .featuresTitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ulList {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style-type: disc; /* เพิ่มสัญลักษณ์จุดให้กับรายการ */
+    padding-left: 20px; /* เพิ่มระยะห่างทางซ้ายให้รายการ */
+  }
+  
+  .ulList li {
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างรายการ */
+  }
+  
+.strongText {
+    color: #000148; /* เพิ่มสีให้กับคำที่ใช้ strong เพื่อเน้น */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .aboutPage {
+      padding: 40px 20px;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .content {
+      font-size: 16px;
+    }
+  }
+  
