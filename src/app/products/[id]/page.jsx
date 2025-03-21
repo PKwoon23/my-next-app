@@ -26,7 +26,7 @@ export default async function ProductDetail({ params }) {
     <div className={styles.container}>
       <h1 className={styles.title}>{product.name}</h1>
 
-      <Img
+      <Image
         src={product.images}
         alt={product.name}
         width={300}
