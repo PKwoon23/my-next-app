@@ -7,6 +7,7 @@ const nextConfig = {
           hostname: 'cdn.pixabay.com',
         },
       ],
+      unoptimized: true, // ปิดการใช้งาน Image Optimization
     },
     output: 'export',  // รองรับการ export static site
   };
