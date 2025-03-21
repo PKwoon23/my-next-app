@@ -1,6 +1,6 @@
 /* About.module.css */
 .aboutPage {
-    padding: 80px;
+    padding: 80px 20px 20px 20px;
     background-color: #f9f9f9; /* เพิ่มสีพื้นหลังที่อ่อนลงเพื่อความสะอาด */
   }
   
@@ -8,7 +8,7 @@
     font-size: 32px;
     font-weight: 600; /* เพิ่มความหนาของฟอนต์เพื่อให้เด่นชัด */
     margin-bottom: 20px;
-    color: #2c3e50; /* สีตัวอักษรที่ทำให้ดูเป็นมืออาชีพ */
+    color: #2b3d4f; /* สีตัวอักษรที่ทำให้ดูเป็นมืออาชีพ */
     text-align: center; /* ให้หัวข้ออยู่กลาง */
   }
   

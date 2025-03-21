@@ -10,12 +10,11 @@ export async function generateStaticParams() {
   }));
 }
 
-// ใช้ async function ตาม Next.js App Router
 export default async function ProductDetail({ params }) {
   // ต้อง await ก่อนใช้ params
   const { id } = await params;
 
-  // หา product โดยเช็ค id เป็น string เสมอ
+  // หา product โดยเช็ค id เป็น string 
   const product = products.find((item) => item.id.toString() === id);
 
   if (!product) {

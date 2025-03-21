@@ -9,7 +9,7 @@ export default function ProductsPage() {
     <div className={styles.container}>
         <Nav />
         <br/><br/>
-      <h1 className={styles.title}>สินค้าอาหารแมว</h1>
+      <h1 className={styles.title}><b>สินค้าอาหารแมว</b></h1>
 
       <ul className={styles.productList}>
         {products.map((product) => (
