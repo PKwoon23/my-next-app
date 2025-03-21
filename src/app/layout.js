@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
-import styles from "./layout.module.css"; // << เพิ่มตรงนี้
+import styles from "./layout.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,23 +22,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* Navbar */}
-        <Nav />
-
-        {/* พื้นหลังขาว แล้วกล่องกลางสีฟ้า */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className={styles.container}>
+          {/* Navbar */}
+          <Nav />
 
-          <div className={styles.wrapper}>
-            {children}
-          </div>
+          {/* Main Content */}
+          <main className={styles.main}>
+            <div className={styles.wrapper}>
+              {children}
+            </div>
+          </main>
 
+          {/* Footer */}
+          <Footer />
         </div>
-
-        {/* Footer */}
-        <Footer />
       </body>
     </html>
   );
