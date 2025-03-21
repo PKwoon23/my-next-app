@@ -14,8 +14,8 @@ export default function HomePage() {
       <div className="flex justify-center mt-6">
         <Image
           src="https://cdn.pixabay.com/photo/2016/05/23/16/51/cat-1410745_1280.jpg"
-          width={1200}  // ขนาดภาพต้นฉบับ
-          height={800}  // สัดส่วนของภาพ
+          width={400}  // ขนาดภาพต้นฉบับ
+          height={400}  // สัดส่วนของภาพ
           priority
           alt="cat image"
           className="rounded-lg shadow-lg"
