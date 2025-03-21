@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
     images: {
       remotePatterns: [
         {
@@ -9,6 +8,7 @@ const nextConfig = {
         },
       ],
     },
+    output: 'export',  // รองรับการ export static site
   };
   
   export default nextConfig;
