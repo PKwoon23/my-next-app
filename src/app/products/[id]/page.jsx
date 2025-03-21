@@ -2,6 +2,7 @@ import products from '../../data/products';
 import styles from './productDetail.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import Nav from '@/app/components/Nav';
 
 // generateStaticParams สำหรับ SSG
 export async function generateStaticParams() {
@@ -22,7 +23,9 @@ export default async function ProductDetail({ params }) {
   }
 
   return (
+    <main className="container mx-auto p-6 bg-white min-h-screen pt-20">
     <div className={styles.container}>
+        
       <h1 className={styles.title}>{product.name}</h1>
         <div className={styles.imageWrapper}>
              <Image
@@ -41,5 +44,6 @@ export default async function ProductDetail({ params }) {
         กลับไปหน้าสินค้า
       </Link>
     </div>
+    </main>
   );
 }

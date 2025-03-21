@@ -4,8 +4,6 @@ import styles from './About.module.css';
 export default function AboutPage() {
   return (
     <main className={styles.aboutPage}>
-      <Nav />
-
       <h1 className={styles.title}>เกี่ยวกับโปรเจกต์นี้</h1>
 
       <div className={styles.content}>

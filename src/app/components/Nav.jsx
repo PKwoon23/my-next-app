@@ -1,67 +1,56 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import styles from './Nav.module.css';
+import { usePathname } from 'next/navigation'; // Hook สำหรับดึง path ปัจจุบัน (URL ของหน้า)
+import styles from './Nav.module.css';         // ดึง CSS Module มาใช้จัดการสไตล์
 
 function Nav() {
-  const pathname = usePathname();
+  const pathname = usePathname(); // ใช้ดึง path ปัจจุบัน เช่น '/', '/products' เป็นต้น
 
-  // state สำหรับเก็บว่ามีการคลิกเมนูครั้งแรกหรือยัง
-  const [hasClicked, setHasClicked] = useState(false);
-
-  useEffect(() => {
-    // ถ้า pathname ไม่ใช่หน้าแรก "/" แสดงว่ามีการเข้าหน้าจริง ให้ active เลย
-    if (pathname !== '/') {
-      setHasClicked(true);
-    }
-  }, [pathname]);
-
-  const handleClick = () => {
-    setHasClicked(true); // กดปุ๊บถือว่าเริ่มใช้งาน
-  };
-
+  // ฟังก์ชันเช็คว่า link นี้ตรงกับ path ปัจจุบันมั้ย ถ้าใช่ return class active ไปใส่
   const isActive = (link) => {
-    if (!hasClicked) return ''; // ถ้ายังไม่คลิก ไม่มี active ใด ๆ
     return pathname === link ? styles.active : '';
   };
 
   return (
     <div className={styles.navContainer}>
       <ul className={styles.navList}>
+        {/* เมนู Home */}
         <li>
           <Link
             href="/"
-            onClick={handleClick}
-            className={`${styles.navLink} ${isActive('/')}`}
+            className={`${styles.navLink} ${isActive('/')}`} // ถ้า pathname ตรงกับ '/' จะใส่ class active ให้
           >
             Home
           </Link>
         </li>
+
+        {/* เมนู Products */}
         <li>
           <Link
             href="/products"
-            onClick={handleClick}
-            className={`${styles.navLink} ${isActive('/products')}`}
+            className={`${styles.navLink} ${isActive('/products')}`} // ตรง path '/products' ใส่ active
           >
             Products
           </Link>
         </li>
+
+        {/* เมนู Contact */}
         <li>
           <Link
             href="/contact"
-            onClick={handleClick}
-            className={`${styles.navLink} ${isActive('/contact')}`}
+            className={`${styles.navLink} ${isActive('/contact')}`} // ตรง path '/contact' ใส่ active
           >
             Contact
           </Link>
         </li>
+
+        {/* เมนู About */}
         <li>
           <Link
             href="/about"
-            onClick={handleClick}
-            className={`${styles.navLink} ${isActive('/about')}`}
+            className={`${styles.navLink} ${isActive('/about')}`} // ตรง path '/about' ใส่ active
           >
             About
           </Link>

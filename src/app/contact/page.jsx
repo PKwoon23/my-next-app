@@ -6,16 +6,16 @@ import styles from './ContactPage.module.css';
 export default function ContactPage() {
   return (
     <main className={styles.contactPage}>
-      <Nav />
+      
 
       <h1 className={styles.title}><b>ช่องทางการติดต่อ</b></h1>
 
       <div className={styles.contactContainer}>
         {/* ข้อมูลการติดต่อ */}
         <div className={styles.info}>
-          <p><strong>Facebook:</strong> jiofjois</p>
-          <p><strong>Phone:</strong> +66 1234 5678</p>
-          <p><strong>Email:</strong> info@example.com</p>
+          <p><strong>Facebook:</strong> facebook.com/yourpage </p>
+          <p><strong>Phone:</strong> 080-000-0000</p>
+          <p><strong>Email:</strong> phomporn@example.com</p>
         </div>
 
         {/* ฟอร์มส่งข้อความ */}
