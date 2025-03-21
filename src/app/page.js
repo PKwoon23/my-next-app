@@ -16,7 +16,8 @@ export default function HomePage() {
         <Image
           src="https://cdn.pixabay.com/photo/2016/05/23/16/51/cat-1410745_1280.jpg"
           width={300}
-          height={100}
+          height={300}
+          priority 
           alt="cat image"
           className="rounded-lg shadow-lg"
         />
