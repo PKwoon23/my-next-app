@@ -24,14 +24,19 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Navbar */}
         <Nav />
-        <div className="mt-6 bg-white">
-          <div className="mt-2 bg-blue-100 px-[2in] mx-auto max-w-screen-lg">
+
+        {/* พื้นหลังขาว แล้วกล่องกลางสีฟ้า */}
+        <div className="mt-6 bg-white min-h-screen flex flex-col">
+          
+          <div className="mt-2 bg-blue-100 px-4 md:px-8 mx-auto max-w-screen-lg flex-1 w-full">
             {children}
           </div>
+
         </div>
 
-
+        {/* Footer */}
         <Footer />
       </body>
     </html>
