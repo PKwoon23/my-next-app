@@ -15,7 +15,7 @@ export default function ProductsPage() {
         {products.map((product) => (
           <li key={product.id} className={styles.productItem}>
             <h2 className={styles.productName}>{product.name}</h2>
-            <Image
+            <Img
             src={product.images}
             alt='รูปสินค้า'
             width={300}
