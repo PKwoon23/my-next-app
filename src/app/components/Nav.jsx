@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Hook สำหรับดึง path ปัจจุบัน (URL ของหน้า)
-import styles from './Nav.module.css';         // ดึง CSS Module มาใช้จัดการสไตล์
+import { usePathname } from 'next/navigation'; 
+import styles from './Nav.module.css';         
 
 function Nav() {
   const pathname = usePathname(); // ใช้ดึง path ปัจจุบัน เช่น '/', '/products' เป็นต้น

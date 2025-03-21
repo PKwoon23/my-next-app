@@ -7,8 +7,6 @@ import styles from './products.module.css'; // import css module
 export default function ProductsPage() {
   return (
     <div className={styles.container}>
-        
-        <br/><br/>
       <h1 className={styles.title}><b>สินค้าอาหารแมว</b></h1>
 
       <ul className={styles.productList}>

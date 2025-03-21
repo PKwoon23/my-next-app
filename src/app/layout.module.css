@@ -1,0 +1,28 @@
+.container {
+  margin-top: 24px; /* mt-6 */
+  background-color: white; /* พื้นหลังสีขาว */
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;  /* เพิ่มขอบซ้าย */
+  padding-right: 16px; /* เพิ่มขอบขวา */
+}
+
+.wrapper {
+  margin-top: 8px; /* mt-2 */
+  background-color: #ebf8ff; /* ฟ้าอ่อน */
+  padding: 16px; /* px-4 */
+  width: 100%;
+  max-width: 800px; /* ปรับขนาดให้ไม่เต็มจอ */
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* เงา */
+  border-radius: 8px; /* มุมโค้ง */
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 32px; /* md:px-8 */
+    max-width: 800px; /* ขนาดบนจอใหญ่ */
+  }
+}

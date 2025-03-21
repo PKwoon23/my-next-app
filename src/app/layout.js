@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import styles from "./layout.module.css"; // << เพิ่มตรงนี้
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +29,9 @@ export default function RootLayout({ children }) {
         <Nav />
 
         {/* พื้นหลังขาว แล้วกล่องกลางสีฟ้า */}
-        <div className="mt-6 bg-white min-h-screen flex flex-col">
-          
-          <div className="mt-2 bg-blue-100 px-4 md:px-8 mx-auto max-w-screen-lg flex-1 w-full">
+        <div className={styles.container}>
+
+          <div className={styles.wrapper}>
             {children}
           </div>
 

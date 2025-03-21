@@ -1,13 +1,11 @@
 'use client';
 
-import Nav from "../components/Nav"; 
+import Nav from "../components/Nav";
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
   return (
     <main className={styles.contactPage}>
-      
-
       <h1 className={styles.title}><b>ช่องทางการติดต่อ</b></h1>
 
       <div className={styles.contactContainer}>

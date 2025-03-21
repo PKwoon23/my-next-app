@@ -12,7 +12,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="container mx-auto p-6 bg-blue-100 min-h-screen">
+    <main className="container mx-auto p-6 min-h-screen">
       <Nav />
       <div>
         {/* Section ส่วนหัว */}

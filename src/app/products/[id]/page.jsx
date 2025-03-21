@@ -23,7 +23,7 @@ export default async function ProductDetail({ params }) {
   }
 
   return (
-    <main className="container mx-auto p-6 bg-white min-h-screen pt-20">
+    <main className="container mx-auto p-6 min-h-screen pt-20">
     <div className={styles.container}>
         
       <h1 className={styles.title}>{product.name}</h1>
