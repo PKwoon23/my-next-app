@@ -24,13 +24,15 @@ export default async function ProductDetail({ params }) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{product.name}</h1>
-
-      <Image
+        <div className={styles.imageWrapper}>
+             <Image
         src={product.images}
         alt={product.name}
         width={300}
         height={300}
       />
+        </div>
+     
 
       <p className={styles.description}>{product.description}</p>
       <p className={styles.price}>ราคา: {product.price} บาท</p>

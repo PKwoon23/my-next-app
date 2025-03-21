@@ -15,12 +15,14 @@ export default function ProductsPage() {
         {products.map((product) => (
           <li key={product.id} className={styles.productItem}>
             <h2 className={styles.productName}>{product.name}</h2>
-            <Image
-            src={product.images}
-            alt='รูปสินค้า'
-            width={300}
-            height={300}
+            <div className={styles.imageWrapper}>
+            <Image className={styles.Image}
+              src={product.images}
+              alt='รูปสินค้า'
+              width={300}
+              height={300}
             />
+            </div>
             <p className={styles.productPrice}>ราคา: {product.price} บาท</p>
             <Link href={`/products/${product.id}`} className={styles.detailLink}>
               ดูรายละเอียด
