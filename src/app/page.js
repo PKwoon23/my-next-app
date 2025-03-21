@@ -1,26 +1,49 @@
+'use client'; 
+
+import { useRouter } from 'next/navigation'; 
 import Image from "next/image";
 import Nav from "./components/Nav";
 
 export default function HomePage() {
-  return (
-    <main className="container mx-auto p-6 bg-gray-50">
-      <Nav />
-      <hr className="my-3 border-gray-300" /> <br />
-      <h3 className="text-4xl font-semibold text-center text-gray-800">Cat Shop</h3>
-      <p className="text-lg text-center text-gray-600 mt-3">
-        เติมความสุขให้แมวของคุณ กับอาหารที่ดีที่สุดจากเรา! 🍽️🐾
-      </p>
+  const router = useRouter(); 
 
+  const handleClick = () => {
+    router.push('/products');
+  };
+
+  return (
+    <main className="container mx-auto p-6 bg-white min-h-screen">
+      <Nav />
+
+      {/* Section ส่วนหัว */}
+      <section className="text-center mt-1">
+        <h1 className="text-5xl font-bold text-gray-800 mb-4">Cat Shop</h1>
+        <p className="text-lg text-gray-600 mb-8">
+          อาหารแมวพรีเมียม เพื่อสุขภาพดีของแมวคุณ!
+        </p>
+      </section>
+
+      {/* รูปภาพแมว */}
       <div className="flex justify-center mt-6">
-        <Image
-          src="https://cdn.pixabay.com/photo/2016/05/23/16/51/cat-1410745_1280.jpg"
-          width={400}  // ขนาดภาพต้นฉบับ
-          height={400}  // สัดส่วนของภาพ
-          priority
-          alt="cat image"
-          className="rounded-lg shadow-lg"
-          style={{ objectFit: "cover" }} // ทำให้ภาพรักษาสัดส่วนและไม่บิดเบือน
-        />
+        <div className="relative w-[400px] h-[400px]">
+          <Image
+            src="https://cdn.pixabay.com/photo/2016/05/23/16/51/cat-1410745_1280.jpg"
+            alt="อาหารแมว"
+            fill
+            priority
+            className="rounded-xl shadow-xl object-cover"
+          />
+        </div>
+      </div>
+
+      {/* ปุ่มดูสินค้า */}
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={handleClick}
+          className="bg-[#2b3d4f] hover:bg-blue-800 text-white text-lg font-medium py-3 px-8 rounded-full transition duration-300 animate-pulse-button"
+        >
+          ดูสินค้าเลย
+        </button>
       </div>
     </main>
   );

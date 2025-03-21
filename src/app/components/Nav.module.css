@@ -1,29 +1,38 @@
+/* Nav.module.css */
 .navContainer {
-    background-color: #2d3748; /* bg-gray-800 ใน tailwind */
-    color: white;
-    padding: 16px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .navList {
-    display: flex;
-    justify-content: center;
-    gap: 24px; /* space-x-6 ใน tailwind */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .navLink:hover {
-    color: #d1d5db; /* hover:text-gray-300 ใน tailwind */
-  }
+  background-color: #2d3748;
+  color: white;
+  padding: 16px;
+  position: fixed; /* ทำให้แถบเมนูติดที่ด้านบนตลอดเวลา */
+  top: 0;
+  left: 0;
+  width: 100%; /* ใช้เต็มความกว้างของหน้า */
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูชัดเจน */
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #0e0c24;
+}
+
+.active {
+  background-color: #0e0c24;
+  color: #ffffff;
+}
