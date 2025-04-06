@@ -1,7 +1,11 @@
 # Cat Shop - โปรเจกต์เว็บไซต์
 เว็บไซต์นี้เป็นเว็บไซต์ตัวอย่างสำหรับขายอาหารแมวพรีเมียม สร้างด้วย Next.js และ React ซึ่งมีหน้าเพจต่างๆ ได้แก่ หน้าแรก, สินค้า, รายละเอียดสินค้า, ติดต่อ, และเกี่ยวกับ
 
+โปรเจกต์นี้ได้ถูกโฮสต์ไว้บน Render สามารถเข้าชมเว็บไซต์ได้ที่ URL:
+https://my-next-app-dzjr.onrender.com/
+
 ## โครงสร้างของโปรเจกต์
+![Screenshot 2025-04-06 135154](https://github.com/user-attachments/assets/c63e4aaa-92bc-4ac8-b1ac-b2ec4914ba02)
 
 ## ฟีเจอร์ของเว็บไซต์
 
@@ -33,21 +37,25 @@
 
 1.  Clone โค้ดโปรเจกต์ลงในเครื่อง:
    
-    `git clone https://github.com/your-username/cat-shop.git` 
+    `https://github.com/PKwoon23/my-next-app.git`
     
-2.  ไปที่โฟลเดอร์โปรเจกต์:
+2.  ตรวจสอบการติดตั้ง Node.js และ npm ตรวจสอบว่าเครื่องของคุณติดตั้ง Node.js และ npm แล้วหรือยัง
+    หากยังไม่ได้ติดตั้ง Node.js และ npm คุณสามารถดาวน์โหลดได้ที่
+    `Node.js official website.`
     
-    `cd cat-shop` 
+4.  ไปที่โฟลเดอร์โปรเจกต์:
     
-3.  ติดตั้ง dependencies:
+    `cd my-next-app` 
+    
+5.  ติดตั้ง dependencies:
     
     `npm install` 
     
-4.  รันเซิร์ฟเวอร์ในโหมดพัฒนา:
+6.  รันเซิร์ฟเวอร์ในโหมดพัฒนา:
     
     `npm run dev` 
     
-5.  เปิดเบราว์เซอร์และไปที่ `http://localhost:3000`
+7.  เปิดเบราว์เซอร์และไปที่ `http://localhost:3000`
 
 ## หน้าเว็บต่างๆ
 
@@ -70,6 +78,15 @@
 ## ตัวอย่างข้อมูลสินค้า
 
 ข้อมูลสินค้าเป็นตัวอย่างของอาหารแมวที่ใช้ในโปรเจกต์:
+
+![Screenshot 2025-04-06 141946](https://github.com/user-attachments/assets/c49d1439-f61e-4789-968a-e91ae3422118)
+
+![Screenshot 2025-04-06 141842](https://github.com/user-attachments/assets/bc7e78ca-5c77-462a-8e37-aca27572c035)
+
+## โฮสต์โปรเจกต์บน Render
+โปรเจกต์นี้ได้ถูกโฮสต์อยู่ที่ Render โดยสามารถเข้าชมเว็บไซต์ได้ที่ URL:
+
+https://my-next-app-dzjr.onrender.com/
 
 ### หมายเหตุ
 
